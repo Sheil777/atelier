@@ -41,6 +41,10 @@ body {
     box-sizing: content-box; /* Сам прибавляет padding */
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 /*
 ._ibg {
     position: relative;
@@ -68,4 +72,5 @@ body {
     font-display: swap;
 }
 
-@import "header";
+@import "_header";
+@import "_main";

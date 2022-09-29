@@ -27,8 +27,7 @@ body {
   line-height: 1;
   font-size: 16px;
   color: #000;
-  font-family: "Old Standard TT";
-  /* , serif; */
+  font-family: "Old Standard TT"; /* , serif; */
 }
 
 .wrapper {
@@ -40,8 +39,11 @@ body {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0 15px;
-  box-sizing: content-box;
-  /* Сам прибавляет padding */
+  box-sizing: content-box; /* Сам прибавляет padding */
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 /*
@@ -68,11 +70,12 @@ body {
   font-display: swap;
 }
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   background: #181511;
+  overflow: auto;
 }
 .header__container {
   display: flex;
@@ -89,6 +92,39 @@ body {
   white-space: nowrap;
 }
 
+.header-for-phone {
+  display: none;
+  background: #181511;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 30px;
+  box-sizing: border-box;
+}
+.header-for-phone__logo {
+  font-size: 40px;
+  line-height: 28px;
+  color: #FFAE2B;
+}
+.header-for-phone__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 52px;
+  color: #FFAE2B;
+  border: 1px solid #FFAE2B;
+  white-space: nowrap;
+}
+
+@media (max-width: 850px) {
+  .header-for-phone {
+    display: flex;
+  }
+}
 .menu__list {
   display: flex;
   height: 100%;
@@ -128,12 +164,10 @@ body {
     visibility: hidden;
     transition: 0.5s;
   }
-
   .close-phone-menu.active {
     visibility: visible;
     opacity: 0.6;
   }
-
   .header {
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -152,11 +186,9 @@ body {
     height: 13vw;
     font-size: 4vw;
   }
-
   .header.phone {
     top: 0;
   }
-
   .menu__list {
     flex-direction: column;
   }
@@ -174,7 +206,6 @@ body {
   .menu__item-logo a {
     font-size: 8vw;
   }
-
   .header__burger {
     position: fixed;
     right: 5vw;
@@ -198,5 +229,64 @@ body {
     border-radius: 30vw;
   }
 }
+.main {
+  margin-top: 84px;
+  padding-bottom: 200px;
+  background-image: url("../img/main-image.png");
+  background-size: cover;
+  background-position-x: center;
+}
+.main__up {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFAE2B;
+  padding-top: 120px;
+}
+.main__text {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 80px;
+  /* or 114% */
+  letter-spacing: 1px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 870px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 22px;
+  /* identical to box height, or 200% */
+  text-transform: uppercase;
+  color: #181511;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 143px;
+  height: 50px;
+  background: #FFAE2B;
+}
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 850px) {
+  /*
+  .main {
+    margin-top: 0;
+  }
+  */
+}
+@media (max-width: 650px) {
+  .main__text {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */

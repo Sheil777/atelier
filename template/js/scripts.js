@@ -5,6 +5,7 @@ $(document).ready(
                 $('div.header__burger').toggleClass('header__burger_close');
                 $('header').toggleClass('phone');
                 $('.close-phone-menu').toggleClass('active');
+                $('body').toggleClass('lock');
             }
         );
     }

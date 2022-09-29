@@ -1,17 +1,14 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   background: #181511;
+  overflow: auto;
 
   &__container {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__menu {
-
   }
 
   &__button {
@@ -25,6 +22,44 @@
     color: #FFAE2B;
     border: 1px solid #FFAE2B;
     white-space: nowrap;
+  }
+}
+
+.header-for-phone {
+  display: none;
+  background: #181511;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 30px;
+  box-sizing: border-box;
+
+  &__logo {
+    font-size: 40px;
+    line-height: 28px;
+    color: #FFAE2B;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 52px;
+
+    color: #FFAE2B;
+    border: 1px solid #FFAE2B;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 850px) { 
+  .header-for-phone {
+    display: flex;
   }
 }
 
