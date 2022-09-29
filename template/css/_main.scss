@@ -54,8 +54,15 @@
     margin-top: 40px;
     width: 143px;
     height: 50px;
-
+    
+    border: 1px solid #FFAE2B;
     background: #FFAE2B;
+    transition: 0.5s;
+
+    &:hover {
+      background: #181511;
+      color: #FFAE2B;
+    }
   }
 }
 
