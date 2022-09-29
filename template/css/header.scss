@@ -1,0 +1,162 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #181511;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 147px;
+    height: 52px;
+
+    color: #FFAE2B;
+    border: 1px solid #FFAE2B;
+    white-space: nowrap;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    height: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 40px;
+
+    &-logo {
+      a {
+        font-size: 22px;
+        line-height: 28px;
+        color: #FFAE2B;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ACA592;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: #FFAE2B;
+    }
+  }
+
+}
+
+@media (max-width: 850px) {
+  .close-phone-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    background: black;
+    z-index: 1;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+
+  .close-phone-menu.active {
+    visibility: visible;
+    opacity: 0.6;
+  }
+
+  .header {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    top: -150vw;
+    transition: 0.5s;
+    z-index: 2;
+    box-shadow: 0px 12px 27px #181511;
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__button {
+      margin-top: 5vw;
+
+      width: 37vw;
+      height: 13vw;
+      font-size: 4vw;
+    }
+  }
+
+  .header.phone {
+    top: 0;
+  }
+
+  .menu {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 5vw;
+    }
+
+    &__link {
+      font-size: 5vw;
+    }
+
+    &__item-logo {
+      margin-bottom: 9vw;
+
+      a {
+        font-size: 8vw;
+      }
+    }
+  }
+
+  .header__burger {
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+
+    background: #FFAE2B;
+    border-radius: 50%;
+    width: 14vw;
+    height: 14vw;
+    padding-top: 3vw;
+    box-sizing: border-box;
+
+    z-index: 2;
+
+    span, &:after, &:before {
+      display: block;
+      content: "";
+      background: #181511;
+      width: 6vw;
+      height: 1vw;
+      margin: 0 auto;
+      margin-top: 1.2vw;
+      border-radius: 30vw;
+    }
+  }
+}
