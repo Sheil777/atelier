@@ -89,18 +89,21 @@
 }
 
 @media (max-width: 850px) {
+    /*
     .templates-main {
         display: block;
     }
+*/
 
     .templates-item {
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 5vw;
 
         &__img {
             width: 70vw;
             height: auto;
             padding-bottom: 50%;
+            margin-bottom: 5vw;
         }
 
         &__name {
