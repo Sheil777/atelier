@@ -17,6 +17,16 @@
     color: #FFAE2B;
 
     padding-top: 120px;
+
+    /* Animation */
+    transform: translate(0, 120%);
+    transition: all 0.8s ease 0.3s;
+    opacity: 0;
+
+    &._scroll-anim-active {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 
   &__text {
@@ -32,6 +42,16 @@
     max-width: 870px;
     margin: 0 auto;
     margin-top: 15px;
+
+    /* Animation */
+    transform: translate(0, 120%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+
+    &._scroll-anim-active {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 
   &__button {
@@ -62,6 +82,16 @@
     &:hover {
       background: #181511;
       color: #FFAE2B;
+    }
+
+    /* Animation */
+    transform: translate(0, 120%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+
+    &._scroll-anim-active {
+      transform: translate(0, 0);
+      opacity: 1;
     }
   }
 }

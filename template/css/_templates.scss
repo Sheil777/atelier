@@ -4,7 +4,7 @@
 
 .templates-header {
     &__top {
-        padding-top: 120px;
+        padding-top: 80px;
 
         font-weight: 400;
         font-size: 12px;
@@ -75,6 +75,16 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
+    }
+    
+    /* Animation */
+    transform: translate(0, 50%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+
+    &._scroll-anim-active {
+      transform: translate(0, 0);
+      opacity: 1;
     }
 }
 
