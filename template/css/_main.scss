@@ -1,9 +1,31 @@
 .main {
   margin-top: 84px;
   padding-bottom: 200px;
+
+  /*
   background-image: url("../img/main-image.png");
   background-size: cover;
   background-position-x: center;
+  */
+
+  &__img {
+    position: fixed;
+    width: 100%;
+    height: 1400px;
+    top: -164px; /* 84px; */
+    left: 0;
+    z-index: -1;
+    
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
 
   &__up {
     font-weight: 400;
@@ -16,7 +38,7 @@
     
     color: #FFAE2B;
 
-    padding-top: 120px;
+    padding-top: 180px; /* 120px; */
 
     /* Animation */
     transform: translate(0, 120%);
@@ -97,11 +119,12 @@
 }
 
 @media (max-width: 850px) {
-  /*
   .main {
-    margin-top: 0;
+    &__img {
+      top: -40px;
+      height: 1000px;
+    }
   }
-  */
 }
 
 @media (max-width: 650px) {

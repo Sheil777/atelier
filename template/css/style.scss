@@ -41,6 +41,10 @@ body {
     box-sizing: content-box; /* Сам прибавляет padding */
 }
 
+body {
+    background: #181511;
+}
+
 body.lock {
     overflow: hidden;
 }
