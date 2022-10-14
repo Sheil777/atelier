@@ -76,6 +76,50 @@ body.lock {
     font-display: swap;
 }
 
+
+/* Общие стили */
+
+._header {
+    &__up {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        
+        color: #ACA592;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        
+        text-align: center;
+        
+        color: #FFAE2B;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    ._header__text {
+        font-size: 40px;
+    }
+}
+
+/* Общие стили */
+
+
+
+
+
+
 @import "_header";
 @import "_main";
 @import "_templates";
+@import "_frame";
+@import "_services";
+@import "_inst";

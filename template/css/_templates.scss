@@ -1,32 +1,11 @@
 .templates {
     background: #181511;
+    padding-bottom: 120px;
 }
 
 .templates-header {
     &__top {
         padding-top: 80px;
-
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 22px;
-        
-        text-align: center;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        
-        color: #ACA592;
-    }
-
-    &__bottom {
-        margin-top: 10px;
-
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 70px;
-        
-        text-align: center;
-        
-        color: #FFAE2B;
     }
 }
 
@@ -119,11 +98,5 @@
         &__name {
             font-size: 3vw;
         }
-    }
-}
-
-@media (max-width: 850px) {
-    .templates-header__bottom {
-        font-size: 40px;
     }
 }
