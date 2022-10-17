@@ -1,0 +1,11 @@
+@mixin animSize {
+    /* Animation */
+    transform: scale(0);
+    transition: all 0.8s ease 0.3s;
+    opacity: 0;
+
+    &._scroll-anim-active {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

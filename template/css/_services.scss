@@ -4,10 +4,12 @@
 
     &__up {
         padding-top: 100px;
+        @include animSize;
     }
 
     &__text {
         padding-bottom: 60px;
+        @include animSize;
     }
 }
 

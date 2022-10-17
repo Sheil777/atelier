@@ -1,3 +1,6 @@
+// Объекту, который необходимо анимировать нужно написать класс _scroll-anim 
+// Чтобы объект не появлялся при повторном скроле _scroll-anim-no-hide
+
 function offset(el) {
     var rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,

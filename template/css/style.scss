@@ -114,8 +114,7 @@ body.lock {
 
 
 
-
-
+@import "_mixins";
 
 @import "_header";
 @import "_main";
@@ -123,3 +122,5 @@ body.lock {
 @import "_frame";
 @import "_services";
 @import "_inst";
+@import "subscribe";
+@import "_footer";

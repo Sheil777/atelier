@@ -1,0 +1,113 @@
+.subscribe {
+    background: #181511;
+    padding-top: 100px;
+
+    &__container {
+        border-bottom: 1px solid #4B4136;
+    }
+
+    &__block {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+
+        text-align: center;
+
+        color: #FFAE2B;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 28px;
+
+        text-align: center;
+
+        color: #ACA592;
+        margin-top: 20px;
+    }
+
+    &__star {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ACA592;
+
+        .gold {
+            color: #FFAE2B;
+        }
+    }
+
+    &__button {
+        max-width: 420px;
+        height: 50px;
+        background-color: #FFAE2B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px auto;
+        font-size: 26px;
+        color: #181511;
+        border: 1px solid #FFAE2B;
+
+        transition: all 0.3s;
+        &:hover {
+            background-color: #181511;
+            color: #FFAE2B;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    &__social-item {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #4B4136;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        .img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg path {
+                transition: all 0.3s;
+                fill: white;
+            }
+            &:hover {
+                svg path {
+                    fill: #FFAE2B;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .subscribe__text {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    .subscribe__header {
+        font-size: 15vw;
+        line-height: 18vw;
+    }
+}
