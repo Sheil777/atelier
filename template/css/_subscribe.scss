@@ -101,13 +101,17 @@
 }
 
 @media (max-width: 850px) {
-    .subscribe__text {
-        font-size: 5vw;
-        line-height: 6vw;
-    }
+    .subscribe {
+        padding-top: 10vw;
 
-    .subscribe__header {
-        font-size: 15vw;
-        line-height: 18vw;
+        &__text {
+            font-size: 5vw;
+            line-height: 6vw;
+        }
+
+        &__header {
+            font-size: 15vw;
+            line-height: 18vw;
+        }
     }
 }
