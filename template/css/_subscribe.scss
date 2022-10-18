@@ -113,5 +113,17 @@
             font-size: 15vw;
             line-height: 18vw;
         }
+
+        &__button {
+            font-size: 5vw;
+        }
+
+        &__star {
+            font-size: 3vw;
+        }
+    }
+
+    .footer {
+        font-size: 3.5vw;
     }
 }

@@ -747,6 +747,15 @@ body.lock {
     font-size: 15vw;
     line-height: 18vw;
   }
+  .subscribe__button {
+    font-size: 5vw;
+  }
+  .subscribe__star {
+    font-size: 3vw;
+  }
+  .footer {
+    font-size: 3.5vw;
+  }
 }
 .footer {
   height: 72px;
