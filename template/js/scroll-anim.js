@@ -33,7 +33,7 @@ if (animItems.length > 0) {
         }
     }
 
-    setTimeout(() => {
+    setTimeout(function() {
         animOnScroll();
     }, 300);
     animOnScroll();
