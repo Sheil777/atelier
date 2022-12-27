@@ -126,6 +126,22 @@ body.lock {
   background: #FFAE2B;
   color: #181511;
 }
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__language {
+  color: #ACA592;
+  cursor: pointer;
+  margin-right: 15px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 12px;
+}
+.header__language_show {
+  opacity: 1;
+}
 
 .header-for-phone {
   display: none;
@@ -272,7 +288,7 @@ body.lock {
 }
 .main {
   margin-top: 84px;
-  padding-bottom: 200px;
+  min-height: 670px;
   /*
   background-image: url("../img/main-image.png");
   background-size: cover;
@@ -771,9 +787,9 @@ body.lock {
 
 .translate {
   position: fixed;
-  bottom: 40px;
-  left: 40px;
-  width: 300px;
+  bottom: 30px;
+  left: 30px;
+  width: 220px;
   height: 130px;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
@@ -781,6 +797,7 @@ body.lock {
   font-family: "Old Standard TT";
   opacity: 1;
   transition: 0.5s;
+  font-size: 14px;
 }
 .translate__close {
   position: absolute;
@@ -796,7 +813,7 @@ body.lock {
 }
 .translate__buttons {
   display: flex;
-  margin-top: 30px;
+  margin-top: 12px;
 }
 .translate_hide {
   opacity: 0;

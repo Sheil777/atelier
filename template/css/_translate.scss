@@ -1,9 +1,9 @@
 .translate {
     position: fixed;
-    bottom: 40px;
-    left: 40px;
+    bottom: 30px;
+    left: 30px;
 
-    width: 300px;
+    width: 220px;
     height: 130px;
 
     background: rgba(0,0,0,0.5);
@@ -12,6 +12,7 @@
     font-family: "Old Standard TT";
     opacity: 1;
     transition: 0.5s;
+    font-size: 14px;
 
     &__close {
         position: absolute;
@@ -29,7 +30,7 @@
 
     &__buttons {
         display: flex;
-        margin-top: 30px;
+        margin-top: 12px;
     }
 
     &_hide {

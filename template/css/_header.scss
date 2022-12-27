@@ -30,6 +30,26 @@
       color: #181511;
     }
   }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__language {
+    // color: white;
+    color: #ACA592;
+    cursor: pointer;
+    margin-right: 15px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 12px;
+
+    &_show {
+      opacity: 1;
+    }
+  }
 }
 
 .header-for-phone {
