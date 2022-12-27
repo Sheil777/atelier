@@ -767,4 +767,50 @@ body.lock {
   justify-content: space-between;
   align-items: center;
   line-height: 20px;
+}
+
+.translate {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 300px;
+  height: 130px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-right: 30px;
+  font-family: "Old Standard TT";
+  opacity: 1;
+  transition: 0.5s;
+}
+.translate__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+.translate__text {
+  margin-top: 10px;
+  color: white;
+  line-height: 20px;
+}
+.translate__buttons {
+  display: flex;
+  margin-top: 30px;
+}
+.translate_hide {
+  opacity: 0;
+}
+
+.translate-buttons__rus {
+  color: white;
+  margin-right: 30px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.translate-buttons__eng {
+  color: gold;
+  cursor: pointer;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
