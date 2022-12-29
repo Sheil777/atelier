@@ -7,7 +7,10 @@ let arrLang = {
         "menu-contact": "Contact",
         "buy-template": "Buy Template",
         "main-up": "WE ARE Atelier Creative Agency",
-        "main-text": "Unique UI Kit Template for Creative Agencies"
+        "main-text": "Unique UI Kit Template for Creative Agencies",
+        "main-button": "VIEW LAYOUTS",
+        "our-layouts": "Our Core Layouts",
+        "template-pages": "Template Pages"
     },
     "ru": {
         "menu-overview": "Обзор",
@@ -17,7 +20,10 @@ let arrLang = {
         "menu-contact": "Контакты",
         "buy-template": "Купить шаблон",
         "main-up": "Мы креативное агенство Atelier",
-        "main-text": "Уникальные шаблоны пользовательского интерфейса для креативных агентств"
+        "main-text": "Уникальные шаблоны пользовательского интерфейса для креативных агентств",
+        "main-button": "ПОСМОТРЕТЬ МАКЕТЫ",
+        "our-layouts": "Наши основные макеты",
+        "template-pages": "Примеры шаблонов"
     },
 }
 
@@ -36,6 +42,8 @@ $(document).ready(function() {
     $(".lang-but").click(function(){     
         let langID = $(this).attr('key');
 
+        // Так как текст на русском языке становится больше
+        // делаем ширину блока больше
         if(langID == "ru") {
             $(".main__text").addClass("ru");
         }else{
