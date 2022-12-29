@@ -49,6 +49,32 @@
     &_show {
       opacity: 1;
     }
+
+    &_phone {
+      display: none;
+      color: white;
+      margin-top: 25px;
+
+      &_ru {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      &_en {
+        display: inline-block;
+        color: #FFAE2B;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header__language {
+    display: none;
+  }
+
+  .header__language_phone {
+    display: block;
   }
 }
 

@@ -33,8 +33,14 @@ function closeWindowWithLanguages(lang) {
 
 $(document).ready(function() {
     // Смена языка
-    $(".lang-but").click(function(){      
-        let langID = $(this).attr('id');
+    $(".lang-but").click(function(){     
+        let langID = $(this).attr('key');
+
+        if(langID == "ru") {
+            $(".main__text").addClass("ru");
+        }else{
+            $(".main__text").removeClass("ru");
+        }
 
         $(".lang").each((i,el) => {
             $(el).text(arrLang[langID][$(el).attr('key')]);
@@ -42,7 +48,7 @@ $(document).ready(function() {
         
         // Смена цвета кнопки
         $(".lang-but").css('color', 'white');
-        $(this).css('color', 'gold');
+        $(this).css('color', '#FFAE2B');
 
         // Закрытие окна
         closeWindowWithLanguages(langID);

@@ -9,6 +9,13 @@
   background-position-x: center;
   */
 
+  &__container {
+    display: flex;
+    min-height: inherit;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__img {
     position: fixed;
     width: 100%;
@@ -39,7 +46,7 @@
     
     color: #FFAE2B;
 
-    padding-top: 180px; /* 120px; */
+    //padding-top: 180px; /* 120px; */
 
     /* Animation */
     transform: translate(0, 120%);
@@ -116,6 +123,10 @@
       opacity: 1;
     }
   }
+}
+
+.main__text.ru {
+  max-width: unset;
 }
 
 @media (max-width: 850px) {
