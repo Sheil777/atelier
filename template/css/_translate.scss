@@ -1,3 +1,8 @@
+@keyframes lineLoad {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
 .translate {
     position: fixed;
     bottom: 30px;
@@ -13,6 +18,20 @@
     opacity: 1;
     transition: 0.5s;
     font-size: 14px;
+
+    & .loadLinear {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: "";
+        // width: 100%;
+        animation: lineLoad 5s 1 linear;
+        animation-fill-mode: forwards;
+        height: 3px;
+        background: #FFAE2B;
+        
+    }
 
     &__close {
         position: absolute;

@@ -35,9 +35,21 @@ function closeWindowWithLanguages(lang) {
         $(".header__language").text("RUS");
     else
         $(".header__language").text("ENG");
+        
+    $(".loadLinear").css('background', 'transparent');
 }
 
 $(document).ready(function() {
+    // Счетчик закрытия окна translate
+    let timer = setTimeout(()=>{
+        closeWindowWithLanguages("en");
+    }, 5000);
+
+    $(".translate").mouseenter(function(){
+        $(".loadLinear").css('background', 'transparent');
+        clearTimeout(timer);    
+    })
+
     // Смена языка
     $(".lang-but").click(function(){     
         let langID = $(this).attr('key');

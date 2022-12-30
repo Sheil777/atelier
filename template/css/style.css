@@ -815,6 +815,23 @@ body.lock {
   line-height: 20px;
 }
 
+@-webkit-keyframes lineLoad {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes lineLoad {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 .translate {
   position: fixed;
   bottom: 30px;
@@ -828,6 +845,19 @@ body.lock {
   opacity: 1;
   transition: 0.5s;
   font-size: 14px;
+}
+.translate .loadLinear {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  -webkit-animation: lineLoad 5s 1 linear;
+          animation: lineLoad 5s 1 linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  height: 3px;
+  background: #FFAE2B;
 }
 .translate__close {
   position: absolute;
