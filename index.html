@@ -23,23 +23,30 @@
                             <a href="" class="menu__link">Atelier.</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Overview</a>
+                            <a href="" class="menu__link lang" key="menu-overview">Overview</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Pages</a>
+                            <a href="" class="menu__link lang" key="menu-pages">Pages</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Portfolio</a>
+                            <a href="" class="menu__link lang" key="menu-portfolio">Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Template</a>
+                            <a href="" class="menu__link lang" key="menu-template">Template</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Contact</a>
+                            <a href="" class="menu__link lang" key="menu-contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header__button">Buy Template</a>
+                <div class="header__right">
+                    <span class="header__language">Rus</span>
+                    <a href="#" class="header__button lang" key="buy-template">Buy Template</a>
+                </div>
+                <div class="header__language_phone">
+                    <div class="header__language_phone_ru lang-but" key="ru">RUS</div>
+                    <div class="header__language_phone_en lang-but" key="en">ENG</div>
+                </div>
             </div>
             <div class="close-phone-menu"></div>
             <div class="header__burger">
@@ -52,17 +59,17 @@
                 <img src="template/img/main-image-big.jpg" alt="background">
             </div>
             <div class="main__container _container">
-                <div class="main__up _scroll-anim _scroll-anim-no-hide">WE ARE Atelier Creative Agency</div>
-                <div class="main__text _scroll-anim _scroll-anim-no-hide">Unique UI Kit Template for Creative Agencies</div>
-                <a href="#" class="main__button _scroll-anim _scroll-anim-no-hide">VIEW LAYOUTS</a>
+                <div class="main__up _scroll-anim _scroll-anim-no-hide lang" key="main-up">WE ARE Atelier Creative Agency</div>
+                <div class="main__text _scroll-anim _scroll-anim-no-hide lang" key="main-text">Unique UI Kit Template for Creative Agencies</div>
+                <a href="#templates" class="main__button _scroll-anim _scroll-anim-no-hide lang" key="main-button">VIEW LAYOUTS</a>
             </div>
         </section>
 
-        <section class="templates">
+        <section class="templates" id="templates">
             <div class="templates__container _container">
                 <div class="templates__header templates-header">
-                    <div class="templates-header__top _header__up _scroll-anim _scroll-anim-no-hide">Our Core Layouts</div>
-                    <div class="templates-header__bottom _header__text _scroll-anim _scroll-anim-no-hide">Template Pages</div>
+                    <div class="templates-header__top _header__up _scroll-anim _scroll-anim-no-hide lang" key="our-layouts">Our Core Layouts</div>
+                    <div class="templates-header__bottom _header__text _scroll-anim _scroll-anim-no-hide lang" key="template-pages">Template Pages</div>
                 </div>
                 <div class="templates__main templates-main">
                     <div class="templates-main__item templates-item _scroll-anim _scroll-anim-no-hide">
@@ -248,9 +255,21 @@
                 </div>
             </div>
         </section>
+
+        <div class="translate">
+            <div class="translate__text">Данный сайт имеет русскоязычную версию, на которую можно переключиться нажав на кнопку ниже.</div>
+            <div class="translate__buttons">
+                <div class="translate-buttons__rus lang-but" key="ru">RUS</div>
+                <div class="translate-buttons__eng lang-but" key="en">ENG</div>
+            </div>
+            <div class="translate__close">X</div>
+            <span class="loadLinear"></span>
+        </div>
     </div>
     <script src="template/js/jquery-3.6.0.min.js"></script>
     <script src="template/js/scripts.js"></script>
     <script src="template/js/scroll-anim.js"></script>
+    <script src="template/js/lang.js"></script>
+    <script src="template/js/scroll.js"></script>
 </body>
 </html>
